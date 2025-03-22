@@ -152,7 +152,7 @@ public class BankersAlgorithm {
 	public static void main(String args[]) {
 		
 		BankersAlgorithm ba;
-		
+		//Define processes and resources
 		String[] Processes = {"P0","P1","P2","P3","P4"};
 		String[] Resources = {"R1","R2","R3"};
 		
@@ -175,7 +175,7 @@ public class BankersAlgorithm {
 		
 		ba = new BankersAlgorithm(Processes, Resources, Allocation, Max, Available);
 		
-		
+		//Check safety
 		if(!ba.safetyAlgorithm(ba.Allocation, ba.Need, ba.Available)) {
 			System.out.println("System is not safe.");
 			return;
